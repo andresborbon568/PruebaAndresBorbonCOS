@@ -1,0 +1,127 @@
+<h1>La partida es: {{tipoDePartida}} </h1>
+<div class="content">
+    <div id="informacion">
+        <input type="text" placeholder="Ingrese Nombre del Jugador" [(ngModel)]="nombreJugador">
+        <h3>Su simbolo es: {{simboloJugador}} </h3>
+        <h4 color="red"> {{mensaje}} </h4>
+    </div>
+    <div id="tablero">
+        <table border="3px">
+            <tr>
+                
+                    <td #casilla1 (click)="registrarMovimiento(casilla1, 1)">
+                        <p  *ngFor="let movement of movimientosJugadorPrincipal; let i = index;">
+                            <span *ngIf="movement == '1'">
+                            {{simboloJugador}}
+                            </span>
+                        </p>
+                        <p  *ngFor="let movementOponent of movimientosOponente; let i = index;">
+                            <span *ngIf="movementOponent == '1'">
+                            {{simboloOponente}}
+                            </span>
+                        </p>
+                    </td>
+                    <td #casilla2 (click)="registrarMovimiento(casilla1, 2)">
+                        <p  *ngFor="let movement of movimientosJugadorPrincipal; let i = index;">
+                            <span *ngIf="movement == '2'">
+                            {{simboloJugador}}
+                            </span>
+                        </p>
+                        <p  *ngFor="let movementOponent of movimientosOponente; let i = index;">
+                            <span *ngIf="movementOponent == '2'">
+                            {{simboloOponente}}
+                            </span>
+                        </p>
+                    </td>
+                    <td #casilla3 (click)="registrarMovimiento(casilla1, 3)">
+                        <p  *ngFor="let movement of movimientosJugadorPrincipal; let i = index;">
+                            <span *ngIf="movement == '3'">
+                            {{simboloJugador}}
+                            </span>
+                        </p>
+                        <p  *ngFor="let movementOponent of movimientosOponente; let i = index;">
+                            <span *ngIf="movementOponent == '3'">
+                            {{simboloOponente}}
+                            </span>
+                        </p>
+                    </td>
+            </tr>
+            <tr>
+                <td #casilla4 (click)="registrarMovimiento(casilla1, 4)">
+                    <p  *ngFor="let movement of movimientosJugadorPrincipal; let i = index;">
+                        <span *ngIf="movement == '4'">
+                        {{simboloJugador}}
+                        </span>
+                    </p>
+                    <p  *ngFor="let movementOponent of movimientosOponente; let i = index;">
+                        <span *ngIf="movementOponent == '4'">
+                        {{simboloOponente}}
+                        </span>
+                    </p>
+                </td>
+                <td #casilla5 (click)="registrarMovimiento(casilla1, 5)">
+                    <p  *ngFor="let movement of movimientosJugadorPrincipal; let i = index;">
+                        <span *ngIf="movement == '5'">
+                        {{simboloJugador}}
+                        </span>
+                    </p>
+                    <p  *ngFor="let movementOponent of movimientosOponente; let i = index;">
+                        <span *ngIf="movementOponent == '5'">
+                        {{simboloOponente}}
+                        </span>
+                    </p>
+                </td>
+                <td #casilla6 (click)="registrarMovimiento(casilla1, 6)">
+                    <p  *ngFor="let movement of movimientosJugadorPrincipal; let i = index;">
+                        <span *ngIf="movement == '6'">
+                        {{simboloJugador}}
+                        </span>
+                    </p>
+                    <p  *ngFor="let movementOponent of movimientosOponente; let i = index;">
+                        <span *ngIf="movementOponent == '6'">
+                        {{simboloOponente}}
+                        </span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td #casilla7 (click)="registrarMovimiento(casilla1, 7)">
+                    <p  *ngFor="let movement of movimientosJugadorPrincipal; let i = index;">
+                        <span *ngIf="movement == '7'">
+                        {{simboloJugador}}
+                        </span>
+                    </p>
+                    <p  *ngFor="let movementOponent of movimientosOponente; let i = index;">
+                        <span *ngIf="movementOponent == '7'">
+                        {{simboloOponente}}
+                        </span>
+                    </p>
+                </td>
+                <td #casilla8 (click)="registrarMovimiento(casilla1, 8)">
+                    <p  *ngFor="let movement of movimientosJugadorPrincipal; let i = index;">
+                        <span *ngIf="movement == '8'">
+                        {{simboloJugador}}
+                        </span>
+                    </p>
+                    <p  *ngFor="let movementOponent of movimientosOponente; let i = index;">
+                        <span *ngIf="movementOponent == '8'">
+                        {{simboloOponente}}
+                        </span>
+                    </p>
+                </td>
+                <td #casilla9 (click)="registrarMovimiento(casilla1, 9)">
+                    <p  *ngFor="let movement of movimientosJugadorPrincipal; let i = index;">
+                        <span *ngIf="movement == '9'">
+                        {{simboloJugador}}
+                        </span>
+                    </p>
+                    <p  *ngFor="let movementOponent of movimientosOponente; let i = index;">
+                        <span *ngIf="movementOponent == '9'">
+                        {{simboloOponente}}
+                        </span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+#tablero {
+    width: 130px;
+    margin: 0 auto;
+}
+
+#tablero table{
+    border: 2px solid blue;
+    font-size: 23px;
+}
+
+#tablero table td{
+    padding: 30px;
+}

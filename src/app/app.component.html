@@ -1,0 +1,8 @@
+<!-- <p class="col-1"> {{codigoGenerado}} </p> -->
+<div class="botonesPrincipales">
+  <a routerLink="/PartidaNueva/{{codigoGenerado}}"><button>Nueva Partida</button></a>
+  <button (click)="showInputCodigo()" class="btn btn-danger">Unirse A Partida</button>
+  <input *ngIf="inputActivo" type="text" placeholder="Ingrese el código a revisar" [(ngModel)]="codigoIngresado">
+</div>
+
+<app-partida></app-partida> 
